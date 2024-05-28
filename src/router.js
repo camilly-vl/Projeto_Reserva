@@ -5,6 +5,6 @@ import SectionController from './controllers/SectionController'
 
 const routes = new Router()
 
-routes.post('/sections', SectionController.store)
+routes.post('/sessions', SectionController.store)
 
 export default routes
