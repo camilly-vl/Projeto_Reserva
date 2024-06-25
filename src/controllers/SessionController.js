@@ -9,7 +9,7 @@
 import User from '../models/User'
 import * as Yup from 'yup'
 
-class SectionController {
+class SessionController {
     async store(req, res){
         const schema = Yup.object().shape({
             email: Yup.string().email().required(),
@@ -27,4 +27,4 @@ class SectionController {
     }
 }
 
-export default new SectionController()
+export default new SessionController()
